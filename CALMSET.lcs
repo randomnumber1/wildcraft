@@ -1,0 +1,72 @@
+CA-Realia for CICS Ver:6.1.0002D:\CICS\CALMSET.BMS
+
+    1 CALMSET  DFHMSD TYPE=&SYSPARM,                                         C
+    2                CTRL=(FREEKB),                                          C
+    3                LANG=COBOL,                                             C
+    4                MODE=INOUT,                                             C
+    5                STORAGE=AUTO,                                           C
+    6                TIOAPFX=YES
+    7 CALMAP   DFHMDI COLUMN=0001,                                           C
+    8                LINE=0001,                                              C
+    9                SIZE=(24,80)
+   10          DFHMDF ATTRB=(PROT,BRT),                                      C
+   11                INITIAL='CALCULATOR PROGRAM',                           C
+   12                LENGTH=20,                                              C
+   13                POS=(1,12)
+   14          DFHMDF ATTRB=(PROT,BRT),                                      C
+   15                INITIAL='USING 2 INPUTS    ',                           C
+   16                LENGTH=20,                                              C
+   17                POS=(1,33)
+   18          DFHMDF ATTRB=(PROT,BRT),                                      C
+   19                INITIAL='INPUT 1',                                      C
+   20                LENGTH=7,                                               C
+   21                POS=(3,12)
+   22 INPUT1   DFHMDF ATTRB=(UNPROT,NUM,IC),                                 C
+   23                INITIAL='00',                                           C
+   24                LENGTH=2,                                               C
+   25                POS=(3,22)
+   26          DFHMDF ATTRB=ASKIP,                                           C
+   27                LENGTH=1,                                               C
+   28                POS=(3,25)
+   29          DFHMDF ATTRB=(PROT,BRT),                                      C
+   30                INITIAL='INPUT 2',                                      C
+   31                LENGTH=7,                                               C
+   32                POS=(5,12)
+   33 INPUT2   DFHMDF ATTRB=(UNPROT,NUM),                                    C
+   34                INITIAL='00',                                           C
+   35                LENGTH=2,                                               C
+   36                POS=(5,22)
+   37          DFHMDF ATTRB=ASKIP,                                           C
+   38                LENGTH=1,                                               C
+   39                POS=(5,25)
+   40          DFHMDF ATTRB=(PROT,BRT),                                      C
+   41                INITIAL='OUTPUT',                                       C
+   42                LENGTH=7,                                               C
+   43                POS=(7,12)
+   44 OUTPUT   DFHMDF ATTRB=(PROT,BRT),                                      C
+   45                INITIAL='000',                                          C
+   46                LENGTH=3,                                               C
+   47                POS=(7,23)
+   48 MESSAGE  DFHMDF ATTRB=(PROT,BRT),                                      C
+   49                INITIAL='                                               C
+   50                   ',                                                   C
+   51                LENGTH=50,                                              C
+   52                POS=(23,2)
+   53          DFHMDF ATTRB=(PROT,BRT),                                      C
+   54                INITIAL='ENTER = PROCESS; PF3 = EXIT',                  C
+   55                LENGTH=27,                                              C
+   56                POS=(24,1)
+   57 DUMMY    DFHMDF ATTRB=(PROT,DRK,FSET),                                 C
+   58                INITIAL=' ',                                            CCA-Realia for CICS Ver:6.1.0002D:\CICS\CALMSET.BMS
+
+   59                LENGTH=1,                                               C
+   60                POS=(24,79)
+   61          DFHMSD TYPE=FINAL
+      CALMSET loaded with 1 MAPS, 13 FIELDS and 146 Bytes of Literals
+
+   62          ENDCA-Realia for CICS Ver:6.1.0002D:\CICS\CALMSET.BMS
+
+      COBOL COPY file generated
+
+      Mapset generated. Object size is 561.
+

@@ -1,0 +1,49 @@
+CA-Realia for CICS Ver:6.1.0002D:\CICS\COMPANY.bms
+
+    1 company  DFHMSD TYPE=&SYSPARM,                                         C
+    2                COLOR=RED,                                              C
+    3                CTRL=(FREEKB),                                          C
+    4                MODE=INOUT,                                             C
+    5                STORAGE=AUTO,                                           C
+    6                TIOAPFX=YES
+    7 SHAPEOU  DFHMDI COLOR=RED,                                             C
+    8                COLUMN=0001,                                            C
+    9                CTRL=(FREEKB),                                          C
+   10                LINE=0001,                                              C
+   11                SIZE=(24,80)
+   12 STANZA1  DFHMDF ATTRB=(UNPROT,BRT,IC),                                 C
+   13                COLOR=PINK,                                             C
+   14                INITIAL='THE CLUB ISNT THE BEST PLACE TO FIND THE LOVE IC
+   15                S WHR I GONE',                                          C
+   16                LENGTH=72,                                              C
+   17                POS=(2,7)
+   18          DFHMDF ATTRB=(ASKIP,NORM),                                    C
+   19                LENGTH=0,                                               C
+   20                POS=(2,80)
+   21 12334    DFHMDF ATTRB=(UNPROT,BRT),                                    C
+   22                COLOR=TURQUOISE,                                        C
+   23                INITIAL='ME AND MY FRIENDS AT TABLE DOING SHOTS TRUST MEC
+   24                 U NEED NOT GO',                                        C
+   25                LENGTH=66,                                              C
+   26                POS=(4,7)
+   27          DFHMDF ATTRB=(ASKIP,NORM),                                    C
+   28                LENGTH=0,                                               C
+   29                POS=(4,74)
+   30 1234     DFHMDF ATTRB=(UNPROT,BRT),                                    C
+   31                COLOR=RED,                                              C
+   32                INITIAL='COME ON COME ON STRETCH UP TRUST ME AND GIVE MEC
+   33                 CHNACE',                                               C
+   34                LENGTH=66,                                              C
+   35                POS=(6,7)
+   36          DFHMDF ATTRB=(ASKIP,NORM),                                    C
+   37                LENGTH=0,                                               C
+   38                POS=(6,74)
+   39          DFHMSD TYPE=FINAL
+      COMPANY loaded with 1 MAPS, 6 FIELDS and 204 Bytes of Literals
+
+   40          ENDCA-Realia for CICS Ver:6.1.0002D:\CICS\COMPANY.bms
+
+      COBOL COPY file generated
+
+      Mapset generated. Object size is 437.
+

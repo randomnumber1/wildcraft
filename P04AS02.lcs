@@ -1,0 +1,107 @@
+CA-Realia for CICS Ver:6.1.0002D:\CICS\P04AS02.bms
+
+    1 P04AS02  DFHMSD TYPE=&SYSPARM,                                         C
+    2                CTRL=(FREEKB),                                          C
+    3                LANG=COBOL,                                             C
+    4                MODE=INOUT,                                             C
+    5                STORAGE=AUTO,                                           C
+    6                TIOAPFX=YES
+    7 EMPLOYE  DFHMDI COLUMN=0001,                                           C
+    8                LINE=0001,                                              C
+    9                SIZE=(24,80)
+   10          DFHMDF ATTRB=(ASKIP,BRT,IC),                                  C
+   11                COLOR=NEUTRAL,                                          C
+   12                HILIGHT=BLINK,                                          C
+   13                INITIAL='DATE:',                                        C
+   14                LENGTH=5,                                               C
+   15                POS=(1,2)
+   16 DATE     DFHMDF ATTRB=(ASKIP,BRT),                                     C
+   17                COLOR=NEUTRAL,                                          C
+   18                INITIAL='          ',                                   C
+   19                LENGTH=10,                                              C
+   20                POS=(1,9)
+   21          DFHMDF ATTRB=(ASKIP,BRT),                                     C
+   22                COLOR=NEUTRAL,                                          C
+   23                HILIGHT=BLINK,                                          C
+   24                INITIAL='TIME:',                                        C
+   25                LENGTH=5,                                               C
+   26                POS=(1,60)
+   27 TIME     DFHMDF ATTRB=(ASKIP,BRT),                                     C
+   28                COLOR=NEUTRAL,                                          C
+   29                INITIAL='        ',                                     C
+   30                LENGTH=8,                                               C
+   31                POS=(1,67)
+   32 TITLE    DFHMDF ATTRB=(PROT,BRT),                                      C
+   33                COLOR=RED,                                              C
+   34                HILIGHT=UNDERLINE,                                      C
+   35                INITIAL='EMPLOYEE MAINTENENCE SYSTEM.',                 C
+   36                LENGTH=28,                                              C
+   37                POS=(3,22)
+   38          DFHMDF ATTRB=(ASKIP,NORM),                                    C
+   39                LENGTH=0,                                               C
+   40                POS=(3,51)
+   41          DFHMDF ATTRB=(ASKIP,BRT),                                     C
+   42                COLOR=GREEN,                                            C
+   43                INITIAL='1.CALCULATOR PROGRAM',                         C
+   44                LENGTH=20,                                              C
+   45                POS=(5,11)
+   46          DFHMDF ATTRB=(ASKIP,BRT),                                     C
+   47                COLOR=GREEN,                                            C
+   48                INITIAL='2.EMPLOYEE INQUIRY',                           C
+   49                LENGTH=18,                                              C
+   50                POS=(7,11)
+   51          DFHMDF ATTRB=(ASKIP,BRT),                                     C
+   52                COLOR=GREEN,                                            C
+   53                INITIAL='3.EMPLOYEE MAINTENENCE',                       C
+   54                LENGTH=22,                                              C
+   55                POS=(9,11)
+   56          DFHMDF ATTRB=(ASKIP,BRT),                                     C
+   57                COLOR=GREEN,                                            C
+   58                INITIAL='4.EMPLOYEE BROWSE',                            CCA-Realia for CICS Ver:6.1.0002D:\CICS\P04AS02.bms
+
+   59                LENGTH=17,                                              C
+   60                POS=(11,11)
+   61 CHOICE   DFHMDF ATTRB=(UNPROT,BRT),                                    C
+   62                COLOR=RED,                                              C
+   63                INITIAL='X',                                            C
+   64                LENGTH=1,                                               C
+   65                POS=(13,11)
+   66          DFHMDF ATTRB=(ASKIP,NORM),                                    C
+   67                LENGTH=0,                                               C
+   68                POS=(13,13)
+   69          DFHMDF ATTRB=(PROT,BRT),                                      C
+   70                COLOR=GREEN,                                            C
+   71                INITIAL='ENTER OPTION TO EXECUTE PROGRAM',              C
+   72                LENGTH=31,                                              C
+   73                POS=(13,14)
+   74          DFHMDF ATTRB=(ASKIP,NORM),                                    C
+   75                LENGTH=0,                                               C
+   76                POS=(13,46)
+   77          DFHMDF ATTRB=(UNPROT,BRT),                                    C
+   78                COLOR=NEUTRAL,                                          C
+   79                INITIAL='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',     C
+   80                LENGTH=40,                                              C
+   81                POS=(19,5)
+   82          DFHMDF ATTRB=(PROT,BRT),                                      C
+   83                COLOR=GREEN,                                            C
+   84                INITIAL='ENTER = PROCESS.',                             C
+   85                LENGTH=16,                                              C
+   86                POS=(21,5)
+   87          DFHMDF ATTRB=(PROT,BRT),                                      C
+   88                COLOR=GREEN,                                            C
+   89                INITIAL='PF3 = EXIT',                                   C
+   90                LENGTH=10,                                              C
+   91                POS=(21,35)
+   92 DUMMY    DFHMDF ATTRB=(UNPROT,BRT),                                    C
+   93                INITIAL='X',                                            C
+   94                LENGTH=1,                                               C
+   95                POS=(24,79)
+   96          DFHMSD TYPE=FINAL
+      P04AS02 loaded with 1 MAPS, 18 FIELDS and 232 Bytes of Literals
+
+   97          ENDCA-Realia for CICS Ver:6.1.0002D:\CICS\P04AS02.bms
+
+      COBOL COPY file generated
+
+      Mapset generated. Object size is 777.
+

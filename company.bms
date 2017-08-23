@@ -1,0 +1,48 @@
+COMPANY  DFHMSD TYPE=&SYSPARM,                                         C
+               COLOR=RED,                                              C
+               CTRL=(FREEKB),                                          C
+               MODE=INOUT,                                             C
+               STORAGE=AUTO,                                           C
+               TIOAPFX=YES
+SHAPEOU  DFHMDI COLOR=RED,                                             C
+               COLUMN=0001,                                            C
+               CTRL=(FREEKB),                                          C
+               LINE=0001,                                              C
+               SIZE=(24,80)
+STANZA1  DFHMDF ATTRB=(UNPROT,BRT,IC),                                 C
+               COLOR=PINK,                                             C
+               INITIAL='THE CLUB ISNT THE BEST PLACE TO FIND THE LOVE IC
+               S WHR I GONE',                                          C
+               LENGTH=72,                                              C
+               POS=(2,7)
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C
+               LENGTH=0,                                               C
+               POS=(2,80)
+12334    DFHMDF ATTRB=(UNPROT,BRT),                                    C
+               COLOR=TURQUOISE,                                        C
+               INITIAL='ME AND MY FRIENDS AT TABLE DOING SHOTS TRUST MEC
+                U NEED NOT GO',                                        C
+               LENGTH=66,                                              C
+               POS=(4,7)
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C
+               LENGTH=0,                                               C
+               POS=(4,74)
+1234     DFHMDF ATTRB=(UNPROT,BRT),                                    C
+               COLOR=RED,                                              C
+               INITIAL='COME ON COME ON STRETCH UP TRUST ME AND GIVE MEC
+                CHNACE',                                               C
+               LENGTH=66,                                              C
+               POS=(6,7)
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C
+               LENGTH=0,                                               C
+               POS=(6,74)
+HIIII    DFHMDF ATTRB=(ASKIP,BRT),                                     C
+               COLOR=RED,                                              C
+               INITIAL='HHFJD',                                        C
+               LENGTH=5,                                               C
+               POS=(10,8)
+         DFHMDF ATTRB=(ASKIP,NORM),                                    C
+               LENGTH=0,                                               C
+               POS=(10,14)
+         DFHMSD TYPE=FINAL
+         END

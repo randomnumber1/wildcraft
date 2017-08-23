@@ -1,0 +1,47 @@
+-----------------------------------------------------------------------------
+ Advantage CA-Realia II Workbench -- Start Compile Task
+    Source File: D:\CICS\PROG01.CBL
+   Options File: D:\CICS\PROG01.CBL.opt
+    Working Dir: D:\CICS\ 
+-----------------------------------------------------------------------------
+*---------------------------------------------------------* 
+* Begin CICS Preprocessor Step                            * 
+*---------------------------------------------------------* 
+----------------------------------------------- 
+..Success - Step  1                    
+.. Step Command File (wbppcics.bat) Run           
+.. Return Code =  ("0")                   
+----------------------------------------------- 
+=========== Start List of Compile Response File ============ 
+ "D:\CICS\PROG01.CIC"
+ "D:\CICS\PROG01.OBJ"
+ "D:\CICS\PROG01.LST"
+=========== End List of Compile Response File ============== 
+Advantage CA-Realia COBOL Compiler Version 6.1.0002
+Copyright 2002 Computer Associates International, Inc.
+
+ Compile of D:\CICS\PROG01.CBL Successful
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+ Advantage CA-Realia II Workbench -- Start Link as EXE Task
+    Source File: D:\CICS\PROG01.CBL
+    Working Dir: D:\CICS\ 
+-----------------------------------------------------------------------------
+=========== Delete target file if it exists ============= 
+
+===========  Link Response File =============== 
+/NOCOBOL
+/EXE:"D:\CICS\PROG01.EXE"
+"PROG01.obj" 
+/main:"PROG01" 
+===========  End of Response File ============= 
+============ Begin Link Step ================  
+COBL @"D:\CICS\PROG01.RSP" 
+Advantage CA-Realia COBL Batch Processor Version 6.1.0002
+Copyright 2002 Computer Associates International, Inc.
+
+CA-Realia LINK Batch Processor
+d:\cics\prog01.exe
+link completed. Files generated: 1 ErrorLevel: 0
+ Link of D:\CICS\PROG01.CBL Successful
+-----------------------------------------------------------------------------

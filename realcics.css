@@ -1,0 +1,23 @@
+; Revision Information
+; ^{File:realcics.css}
+; ^{Timestamp:4/30/2002   2:13:04 PM  }
+; ^{Revision:7.0}
+;
+[CICS Session]
+MONO=No
+PRNIDNT=P001
+NULLTERM=YES
+PRINTNULL=
+TERMID=T001
+REGIONDIR=C:\ProgramData\CA\Realia\
+SESSIONDIR=
+;
+; common values with [CICS Region]
+;
+START=
+TRACE=
+;
+; TIMEOUT sets delay before Terminal Control checks for
+; other activity (START or START for Printer Terminal)
+;
+TIMEOUT=5

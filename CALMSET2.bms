@@ -1,0 +1,9 @@
+CALMSET  DFHMSD TYPE=&SYSPARM,                                         C
+               COLOR=PINK,                                             C
+               CTRL=(FREEKB),                                          C
+               MODE=INOUT,                                             C
+               STORAGE=AUTO,                                           C
+               TIOAPFX=YES
+CALMSET  DFHMDI SIZE=(24,80)
+         DFHMSD TYPE=FINAL
+         END

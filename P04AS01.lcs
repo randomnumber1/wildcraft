@@ -1,0 +1,91 @@
+CA-Realia for CICS Ver:6.1.0002D:\CICS\P04AS01.bms
+
+    1 CALMSET  DFHMSD TYPE=&SYSPARM,                                         C
+    2                COLOR=YELLOW,                                           C
+    3                CTRL=(FREEKB),                                          C
+    4                LANG=COBOL,                                             C
+    5                MODE=INOUT,                                             C
+    6                STORAGE=AUTO,                                           C
+    7                TIOAPFX=NO
+    8 CALMAP1  DFHMDI COLUMN=0001,                                           C
+    9                LINE=0001,                                              C
+   10                SIZE=(24,80)
+   11 TITLE    DFHMDF ATTRB=(PROT,BRT),                                      C
+   12                COLOR=NEUTRAL,                                          C
+   13                INITIAL='CALCULATOR PROGRAM',                           C
+   14                LENGTH=18,                                              C
+   15                POS=(2,22)
+   16 INPUT1   DFHMDF ATTRB=(PROT,BRT),                                      C
+   17                COLOR=NEUTRAL,                                          C
+   18                INITIAL='INPUT-1=',                                     C
+   19                LENGTH=8,                                               C
+   20                POS=(4,15)
+   21          DFHMDF ATTRB=(UNPROT,BRT,IC),                                 C
+   22                COLOR=GREEN,                                            C
+   23                INITIAL='00',                                           C
+   24                LENGTH=2,                                               C
+   25                POS=(4,26)
+   26 INPUT2   DFHMDF ATTRB=(PROT,BRT),                                      C
+   27                COLOR=NEUTRAL,                                          C
+   28                INITIAL='INPUT-2=',                                     C
+   29                LENGTH=8,                                               C
+   30                POS=(6,15)
+   31          DFHMDF ATTRB=(UNPROT,BRT),                                    C
+   32                COLOR=GREEN,                                            C
+   33                INITIAL='00',                                           C
+   34                LENGTH=2,                                               C
+   35                POS=(6,26)
+   36 OUTPUTS  DFHMDF ATTRB=(PROT,BRT),                                      C
+   37                COLOR=NEUTRAL,                                          C
+   38                INITIAL='OUTPUTS =>',                                   C
+   39                LENGTH=10,                                              C
+   40                POS=(8,10)
+   41 ADD      DFHMDF ATTRB=(PROT,BRT),                                      C
+   42                INITIAL='addition =',                                   C
+   43                LENGTH=10,                                              C
+   44                POS=(10,15)
+   45          DFHMDF ATTRB=(UNPROT,BRT),                                    C
+   46                COLOR=GREEN,                                            C
+   47                INITIAL='000',                                          C
+   48                LENGTH=3,                                               C
+   49                POS=(10,27)
+   50 SUB      DFHMDF ATTRB=(PROT,BRT),                                      C
+   51                COLOR=YELLOW,                                           C
+   52                INITIAL='subtract =',                                   C
+   53                LENGTH=10,                                              C
+   54                POS=(12,15)
+   55          DFHMDF ATTRB=(UNPROT,BRT),                                    C
+   56                COLOR=NEUTRAL,                                          C
+   57                INITIAL='000',                                          C
+   58                LENGTH=3,                                               CCA-Realia for CICS Ver:6.1.0002D:\CICS\P04AS01.bms
+
+   59                POS=(12,27)
+   60 MULT     DFHMDF ATTRB=(PROT,BRT),                                      C
+   61                COLOR=NEUTRAL,                                          C
+   62                INITIAL='multiply =',                                   C
+   63                LENGTH=10,                                              C
+   64                POS=(14,15)
+   65          DFHMDF ATTRB=(UNPROT,BRT),                                    C
+   66                COLOR=NEUTRAL,                                          C
+   67                INITIAL='000',                                          C
+   68                LENGTH=3,                                               C
+   69                POS=(14,27)
+   70 DIV      DFHMDF ATTRB=(PROT,BRT),                                      C
+   71                COLOR=NEUTRAL,                                          C
+   72                INITIAL='division =',                                   C
+   73                LENGTH=10,                                              C
+   74                POS=(16,15)
+   75          DFHMDF ATTRB=(UNPROT,BRT),                                    C
+   76                COLOR=GREEN,                                            C
+   77                INITIAL='000',                                          C
+   78                LENGTH=3,                                               C
+   79                POS=(16,27)
+   80          DFHMSD TYPE=FINAL
+      P04AS01 loaded with 1 MAPS, 14 FIELDS and 100 Bytes of Literals
+
+   81          ENDCA-Realia for CICS Ver:6.1.0002D:\CICS\P04AS01.bms
+
+      COBOL COPY file generated
+
+      Mapset generated. Object size is 541.
+
